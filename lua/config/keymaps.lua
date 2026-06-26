@@ -4,4 +4,9 @@
 
 vim.keymap.set("v", "ss", ":sort<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>t", ":Telescope<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<leader>T", ":TodoTelescope<CR>", { noremap = true, silent = true })
+vim.keymap.set(
+  "n",
+  "<leader>T",
+  ":TodoTelescope keywords=TODO,FIX,WARN,XXX,FIXME<CR>",
+  { noremap = true, silent = true }
+)
